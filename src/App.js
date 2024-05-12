@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './assets/components/Layout';
-import Home from './assets/pages/Home';
 import Sale from './assets/pages/Sale';
 import Sell from './assets/pages/Sell';
 import About from './assets/pages/About';
@@ -13,15 +12,14 @@ function App() {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Home />} /> */}
           <Route path="homes-for-sale" element={<Sale />} />
           <Route path="sell-your-home" element={<Sell />} />
           <Route path="about-us" element={<About />} />
         </Routes>
-      </Layout>
 
         <Container style={{ flexGrow: 1 }}>
-          <div style={{ textAlign: 'center' }}>
+          {/* <div style={{ textAlign: 'center' }}>
             <img
               src="/abmlogo.png"
               alt="ABM Real Estate Logo"
@@ -29,7 +27,7 @@ function App() {
               width={400}
               style={{ padding: 10, display: 'block', margin: '0 auto' }}
             />
-          </div>
+          </div> */}
 
           <h2
             style={{
@@ -74,6 +72,7 @@ function App() {
             </Grid>
           </Grid>
         </Container>
+      </Layout>
       </Router>
     );
   }
